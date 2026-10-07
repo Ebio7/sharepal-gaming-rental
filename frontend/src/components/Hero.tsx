@@ -1,7 +1,5 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function Hero() {
   return (
     <section className="relative overflow-hidden py-16 px-4">
@@ -44,24 +42,22 @@ export default function Hero() {
       </div>
 
       {/* Left side gaming image */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-90 hidden lg:block z-20">
-        <Image
-          src="https://png.pngtree.com/png-clipart/20200615/ourmid/pngtree-black-edition-with-controller-joystick-png-image_2256380.jpg"
-          alt="PS5 Black Edition"
-          fill
-          className="object-contain drop-shadow-2xl"
-          style={{ transform: 'rotate(-15deg)' }}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-85 hidden lg:block z-20 mix-blend-screen">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-THBrWpv4I4K6y5RcEyGJHWYfVJbPfwJhP9JPV-nfA&s=10"
+          alt="PS5 Gaming Console"
+          className="w-full h-full object-contain"
+          style={{ transform: 'rotate(-15deg)', filter: 'brightness(1.1) contrast(1.1)' }}
         />
       </div>
 
       {/* Right side gaming image */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-90 hidden lg:block z-20">
-        <Image
-          src="https://www.pngall.com/wp-content/uploads/14/PS5-PNG-Clipart-thumb.webp"
-          alt="PS5 Console"
-          fill
-          className="object-contain drop-shadow-2xl"
-          style={{ transform: 'rotate(15deg)' }}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-85 hidden lg:block z-20 mix-blend-screen">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjA8TCcie9cDWRzCKTnJDlu5oK4jr1fa3UdWiVsaMhA&s=10"
+          alt="PS5 Controller"
+          className="w-full h-full object-contain"
+          style={{ transform: 'rotate(15deg)', filter: 'brightness(1.1) contrast(1.1)' }}
         />
       </div>
     </section>
