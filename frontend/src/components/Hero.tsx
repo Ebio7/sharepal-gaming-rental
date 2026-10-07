@@ -42,22 +42,22 @@ export default function Hero() {
       </div>
 
       {/* Left side gaming image */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-85 hidden lg:block z-20 mix-blend-screen">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 hidden lg:block z-20">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-THBrWpv4I4K6y5RcEyGJHWYfVJbPfwJhP9JPV-nfA&s=10"
           alt="PS5 Gaming Console"
           className="w-full h-full object-contain"
-          style={{ transform: 'rotate(-15deg)', filter: 'brightness(1.1) contrast(1.1)' }}
+          style={{ transform: 'rotate(-15deg)' }}
         />
       </div>
 
       {/* Right side gaming image */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-85 hidden lg:block z-20 mix-blend-screen">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 hidden lg:block z-20">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjA8TCcie9cDWRzCKTnJDlu5oK4jr1fa3UdWiVsaMhA&s=10"
           alt="PS5 Controller"
           className="w-full h-full object-contain"
-          style={{ transform: 'rotate(15deg)', filter: 'brightness(1.1) contrast(1.1)' }}
+          style={{ transform: 'rotate(15deg)' }}
         />
       </div>
     </section>
