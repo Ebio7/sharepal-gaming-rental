@@ -1,7 +1,7 @@
 'use client';
 
 import { Product } from '@/types/product';
-import { Star, ShoppingCart } from 'lucide-react';
+import { Star, Plus } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
@@ -13,9 +13,9 @@ export default function ProductCard({ product }: ProductCardProps) {
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 group">
+    <div className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 group">
       {/* Image container */}
-      <div className="relative aspect-square bg-gray-100 overflow-hidden">
+      <div className="relative aspect-[4/3] bg-gray-100 overflow-hidden">
         {!imageError ? (
           <Image
             src={product.image}
@@ -33,7 +33,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Tag badge */}
         {product.tag && (
           <div className="absolute top-3 left-3">
-            <span className="px-3 py-1 bg-orange-500 text-white text-xs font-semibold rounded-full">
+            <span className="px-3 py-1 bg-purple-600 text-white text-xs font-semibold rounded-full">
               {product.tag}
             </span>
           </div>
@@ -55,15 +55,15 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.name}
         </h3>
 
-        {/* Rating and bookings */}
-        <div className="flex items-center gap-4 mb-3">
-          <div className="flex items-center gap-1">
-            <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            <span className="text-sm font-medium text-gray-700">{product.rating}</span>
-          </div>
-          <div className="text-sm text-gray-500">
-            {product.booked_count} bookings
-          </div>
+        {/* Rating */}
+        <div className="flex items-center gap-1 mb-3">
+          <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+          <span className="text-sm font-medium text-gray-700">{product.rating}</span>
+        </div>
+
+        {/* Price info */}
+        <div className="text-sm text-gray-500 mb-3">
+          Select Dates to view price
         </div>
 
         {/* Price and action */}
@@ -76,14 +76,14 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
           <button
             disabled={product.out_of_stock}
-            className={`p-2 rounded-full transition-colors ${
+            className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
               product.out_of_stock
                 ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
-                : 'bg-orange-500 text-white hover:bg-orange-600'
+                : 'bg-purple-600 text-white hover:bg-purple-700'
             }`}
             onClick={() => !product.out_of_stock && alert(`Added ${product.name} to cart!`)}
           >
-            <ShoppingCart className="w-5 h-5" />
+            <Plus className="w-5 h-5" />
           </button>
         </div>
       </div>

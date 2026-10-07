@@ -15,7 +15,7 @@ export default function Stats() {
   ];
 
   return (
-    <section className="bg-orange-500 py-12 px-4">
+    <section className="bg-purple-600 py-12 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (

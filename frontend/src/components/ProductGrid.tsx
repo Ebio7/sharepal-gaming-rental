@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { Product } from '@/types/product';
 import ProductCard from './ProductCard';
+import CategoryFilter from './CategoryFilter';
 
 export default function ProductGrid() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -32,7 +33,7 @@ export default function ProductGrid() {
     return (
       <div className="flex items-center justify-center py-12">
         <div className="text-center">
-          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-orange-500 border-r-transparent"></div>
+          <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-purple-600 border-r-transparent"></div>
           <p className="mt-4 text-gray-600">Loading products...</p>
         </div>
       </div>
@@ -60,20 +61,27 @@ export default function ProductGrid() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-4">
-        <h2 className="text-2xl font-bold text-gray-900 mb-2">gaming gadgets on rent</h2>
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Gaming Gadgets On Rent</h2>
         <p className="text-gray-600">
           Total items: {products.length} items
         </p>
-        <p className="text-sm text-gray-500">
-          Showing {products.length} of {products.length} results
-        </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
+      <div className="flex flex-col md:flex-row gap-6">
+        {/* Sidebar - Category Filter */}
+        <div className="md:w-64 flex-shrink-0">
+          <CategoryFilter />
+        </div>
+
+        {/* Product Grid */}
+        <div className="flex-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
