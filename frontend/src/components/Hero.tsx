@@ -46,8 +46,8 @@ export default function Hero() {
       {/* Left side gaming image */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-90 hidden lg:block z-20">
         <Image
-          src="https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-100-games-with-1-controller/ps5-with-100-games-with-1-controller-on-rent-sharepal-1.webp"
-          alt="PS5 Console"
+          src="https://png.pngtree.com/png-clipart/20200615/ourmid/pngtree-black-edition-with-controller-joystick-png-image_2256380.jpg"
+          alt="PS5 Black Edition"
           fill
           className="object-contain drop-shadow-2xl"
           style={{ transform: 'rotate(-15deg)' }}
@@ -57,8 +57,8 @@ export default function Hero() {
       {/* Right side gaming image */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-48 md:w-64 h-48 md:h-64 opacity-90 hidden lg:block z-20">
         <Image
-          src="https://images.sharepal.in/categories/gaming-consoles/ps5/ps5-with-2-controllers/ps5-console-with-2-controllers-on-rent-sharepal-1.webp"
-          alt="PS5 with Controllers"
+          src="https://www.pngall.com/wp-content/uploads/14/PS5-PNG-Clipart-thumb.webp"
+          alt="PS5 Console"
           fill
           className="object-contain drop-shadow-2xl"
           style={{ transform: 'rotate(15deg)' }}

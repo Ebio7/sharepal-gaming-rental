@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'images.sharepal.in',
       },
+      {
+        protocol: 'https',
+        hostname: 'png.pngtree.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.pngall.com',
+      },
     ],
   },
   turbopack: {
