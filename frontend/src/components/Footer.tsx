@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowUp } from 'lucide-react';
 
 export default function Footer() {
