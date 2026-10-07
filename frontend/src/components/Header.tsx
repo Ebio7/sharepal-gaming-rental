@@ -13,7 +13,10 @@ export default function Header() {
       <div className="bg-orange-500 text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <span className="text-sm font-medium">Select rental dates to view prices</span>
-          <button className="flex items-center gap-2 bg-white text-orange-500 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-orange-50 transition-colors">
+          <button 
+            className="flex items-center gap-2 bg-white text-orange-500 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-orange-50 transition-colors"
+            onClick={() => alert('Date picker functionality coming soon!')}
+          >
             <Calendar className="w-4 h-4" />
             Select Rental Dates
           </button>
@@ -48,13 +51,22 @@ export default function Header() {
 
           {/* Right side actions */}
           <div className="flex items-center gap-4">
-            <button className="hidden md:flex items-center gap-2 text-gray-700 hover:text-orange-500 transition-colors">
+            <button 
+              className="hidden md:flex items-center gap-2 text-gray-700 hover:text-orange-500 transition-colors"
+              onClick={() => alert('Search functionality coming soon!')}
+            >
               <Search className="w-5 h-5" />
             </button>
-            <button className="hidden md:flex items-center gap-2 text-gray-700 hover:text-orange-500 transition-colors">
+            <button 
+              className="hidden md:flex items-center gap-2 text-gray-700 hover:text-orange-500 transition-colors"
+              onClick={() => alert('Cart functionality coming soon!')}
+            >
               <ShoppingCart className="w-5 h-5" />
             </button>
-            <button className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full font-medium hover:bg-orange-600 transition-colors">
+            <button 
+              className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full font-medium hover:bg-orange-600 transition-colors"
+              onClick={() => alert('Login functionality coming soon!')}
+            >
               <User className="w-4 h-4" />
               <span className="hidden sm:inline">Hi, Login</span>
             </button>

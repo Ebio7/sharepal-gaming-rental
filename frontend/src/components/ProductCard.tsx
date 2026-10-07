@@ -81,6 +81,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                 ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 : 'bg-orange-500 text-white hover:bg-orange-600'
             }`}
+            onClick={() => !product.out_of_stock && alert(`Added ${product.name} to cart!`)}
           >
             <ShoppingCart className="w-5 h-5" />
           </button>

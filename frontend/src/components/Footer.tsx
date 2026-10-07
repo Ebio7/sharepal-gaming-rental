@@ -15,16 +15,16 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4">Sharepal</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('About page coming soon!'); }}>
                 About
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Why SharePal page coming soon!'); }}>
                 Why SharePal
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Sitemap coming soon!'); }}>
                 Sitemap
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('CarePal page coming soon!'); }}>
                 CarePal
               </a>
             </div>
@@ -34,19 +34,19 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Become a Pal</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Sharepal for Creators coming soon!'); }}>
                 Sharepal for Creators
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Careers page coming soon!'); }}>
                 Careers
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Sharepal for Brands coming soon!'); }}>
                 Sharepal for Brands
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Asset Funding Program coming soon!'); }}>
                 Asset Funding Program New
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Rent Your Gear coming soon!'); }}>
                 Rent Your Gear New
               </a>
             </div>
@@ -56,19 +56,19 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Information</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('How it works page coming soon!'); }}>
                 How it works?
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('FAQs page coming soon!'); }}>
                 FAQs
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Verification page coming soon!'); }}>
                 Verification
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Cancellation Policy page coming soon!'); }}>
                 Cancellation Policy
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Life at Sharepal page coming soon!'); }}>
                 Life at Sharepal
               </a>
             </div>
@@ -78,19 +78,19 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Policies</h3>
             <div className="space-y-2">
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Terms & Condition page coming soon!'); }}>
                 Terms & Condition
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Shipping policy page coming soon!'); }}>
                 Shipping policy
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Damage Policy page coming soon!'); }}>
                 Damage Policy
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Terms of Use page coming soon!'); }}>
                 Terms of Use
               </a>
-              <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+              <a href="#" className="block text-gray-400 hover:text-white transition-colors" onClick={(e) => { e.preventDefault(); alert('Privacy Policy page coming soon!'); }}>
                 Privacy Policy
               </a>
             </div>

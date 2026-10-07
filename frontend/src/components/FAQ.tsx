@@ -62,7 +62,10 @@ export default function FAQ() {
       </div>
 
       <div className="text-center mt-8">
-        <button className="text-orange-500 font-medium hover:text-orange-600 transition-colors">
+        <button 
+          className="text-orange-500 font-medium hover:text-orange-600 transition-colors"
+          onClick={() => alert('More FAQs coming soon!')}
+        >
           View more FAQ's
         </button>
       </div>
