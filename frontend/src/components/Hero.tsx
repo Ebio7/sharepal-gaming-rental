@@ -47,7 +47,10 @@ export default function Hero() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO-THBrWpv4I4K6y5RcEyGJHWYfVJbPfwJhP9JPV-nfA&s=10"
           alt="PS5 Gaming Console"
           className="w-full h-full object-contain"
-          style={{ transform: 'rotate(-15deg)' }}
+          style={{ 
+            transform: 'rotate(-15deg)',
+            mixBlendMode: 'multiply'
+          }}
         />
       </div>
 
@@ -57,7 +60,10 @@ export default function Hero() {
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZjA8TCcie9cDWRzCKTnJDlu5oK4jr1fa3UdWiVsaMhA&s=10"
           alt="PS5 Controller"
           className="w-full h-full object-contain"
-          style={{ transform: 'rotate(15deg)' }}
+          style={{ 
+            transform: 'rotate(15deg)',
+            mixBlendMode: 'multiply'
+          }}
         />
       </div>
     </section>
