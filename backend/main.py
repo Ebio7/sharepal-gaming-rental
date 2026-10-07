@@ -47,7 +47,7 @@ def load_initial_data():
     db = SessionLocal()
     if db.query(Product).count() == 0:
         # Load from JSON file
-        json_path = os.path.join(os.path.dirname(__file__), "..", "product-list.json")
+        json_path = os.path.join(os.path.dirname(__file__), "product-list.json")
         if os.path.exists(json_path):
             with open(json_path, "r") as f:
                 data = json.load(f)
