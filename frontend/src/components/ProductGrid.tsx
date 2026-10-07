@@ -14,13 +14,21 @@ export default function ProductGrid() {
     async function fetchProducts() {
       try {
         const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+        console.log('Fetching from:', apiUrl);
         const response = await fetch(`${apiUrl}/api/products`);
+        console.log('Response status:', response.status);
+        
         if (!response.ok) {
-          throw new Error('Failed to fetch products');
+          const errorText = await response.text();
+          console.error('Error response:', errorText);
+          throw new Error(`Failed to fetch products: ${response.status}`);
         }
+        
         const data = await response.json();
+        console.log('Products fetched:', data.length);
         setProducts(data);
       } catch (err) {
+        console.error('Fetch error:', err);
         setError(err instanceof Error ? err.message : 'An error occurred');
       } finally {
         setLoading(false);
