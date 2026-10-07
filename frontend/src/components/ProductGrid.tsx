@@ -13,7 +13,8 @@ export default function ProductGrid() {
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const response = await fetch('http://localhost:8000/api/products');
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+        const response = await fetch(`${apiUrl}/api/products`);
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
@@ -45,7 +46,7 @@ export default function ProductGrid() {
       <div className="flex items-center justify-center py-12">
         <div className="text-center text-red-600">
           <p>Error: {error}</p>
-          <p className="text-sm text-gray-500 mt-2">Make sure the backend is running on port 8000</p>
+          <p className="text-sm text-gray-500 mt-2">Unable to fetch products. Please try again later.</p>
         </div>
       </div>
     );
